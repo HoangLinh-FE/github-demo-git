@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Header -->
+    <title>F8 - Landing pgae</title>
+    <meta charset="utf-8" />
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- <div>
+ 
+
+      <table>
+        <thead>
+          <th>#</th>
+          <th>Tên khóa học</th>
+          <th>Giá</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML, CSS từ zero đến Hero</td>
+            <td>Miễn phí</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Thiết kế web responsive</td>
+            <td>Miễn phí</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lập trình Javascript cơ bản</td>
+            <td>Miễn phí</td>
+          </tr>
+        </tbody>
+      </table>
+
+      Tên đăng nhập<input type="text" /> 
+      Mật khẩu<input type="password" />
+
+      <div>
+        <input name="gender" type="radio" />Nam<input
+          name="gender"
+          type="radio"
+        />Nữ<input name="gender" type="radio" />Khác
+      </div>
+
+      <div><input type="checkbox" name="answer"  /> Đáp án 1
+        <input type="checkbox" name="answer"  /> Đáp án 2
+        <input type="checkbox" name="answer"  />Đáp án 3
+        <input type="checkbox" name="answer"  />Đáp án 4
+    </div> -->
+    <!-- <div><input type="submit" value="Đăng ký">
+    </div> -->
+    <!-- <div id="root"></div> -->
+    <!-- <h1>Hello world!</h1> -->
+  </body>
+  <!-- <script src="./site.js"></script> -->
+  <script
+    src="https://unpkg.com/react@17/umd/react.development.js"
+    crossorigin
+  ></script>
+  <script>
+    const ulDOM = document.createElement("ul");
+    ulDOM.id = "ul-li";
+    const liDOm1 = document.createElement("li");
+    liDOm1.innerText = "Javascript";
+
+    const liDOm2 = document.createElement("li");
+    liDOm2.innerText = "ReactJS";
+
+    ulDOM.appendChild(liDOm1);
+    ulDOM.appendChild(liDOm2);
+
+    document.body.appendChild(ulDOM);
+    // React
+
+    const ulReact = React.createElement(
+      "ul",
+      { id: "ul-li", style: "color:red" },
+      React.createElement("li", null, "Javascript"),
+      React.createElement("li", null, "ReactJS")
+    );
+
+    console.log(ulReact);
+  </script>
+</html>
